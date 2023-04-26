@@ -1,0 +1,97 @@
+.container{
+    width: 100vw;
+    min-height: 100vh;
+
+}
+
+.header{
+    background-color: var(--gray-700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.inputTaskContainer{
+    height: 3rem;
+    
+    max-width: 41rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: -1.5rem;
+}
+
+.inputTask{
+    font-size: var(--font-normal);
+    padding:0.77rem;
+    flex: 1;
+    border-radius: 8px;
+    background-color: var(--gray-500);
+    border: none;
+    color: var(--gray-100);
+    outline: none;
+}
+
+.inputTask::placeholder{
+    color:var(--gray-300); 
+}
+.btnCreateTask{
+    font-weight: bold;
+    background-color: var(--blue-dark);
+    border: none;
+    color: var(--gray-100);
+    font-size: var(--font-normal);
+    margin-left: 1.3rem;
+    padding: 0 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    max-height: 52px;
+    transition: 300ms all;
+}
+
+.btnCreateTask:hover{
+    background-color: var(--blue-base);
+}
+.btnCreateTask .icon{
+    margin-left: 5px;
+}
+
+
+.tasksInfoContainer{
+    margin: 3.5rem auto 0 auto;
+    max-width: 41rem;
+}
+
+
+
+.taskInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.3rem;
+}
+.taskInfo p {
+    font-size: var(--font-normal);
+    font-weight: bold;
+}
+.taskInfo .completed, .taskInfo .created{
+    display: flex;
+}
+
+.taskInfo .completed span, .taskInfo .created span{
+    margin-left: 15px;
+    color: var(--gray-100);
+    font-weight: bold;
+    background-color:var(--gray-400);
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.taskInfo .created p{
+    color:var(--blue-base);
+}
+.taskInfo .completed p{
+    color:var(--purple-base);
+}
